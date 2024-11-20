@@ -1,0 +1,36 @@
+@baseUrl = http://localhost:3000/API
+
+### Get All Users
+GET {{baseUrl}}/users
+Content-Type: application/json
+
+### Get Specific User by ID
+GET {{baseUrl}}/users/1
+Content-Type: application/json
+
+### Create a Playlist 
+POST {{baseUrl}}/playlists
+Content-Type: application/json
+
+{
+  "name": "My New Playlist",
+  "description": "A cool playlist I made",
+  "ownerId": 1,
+  "trackIds": [1, 2, 3]
+}
+
+### Get All Playlists
+GET {{baseUrl}}/playlists
+Content-Type: application/json
+
+### Get Specific Playlist by ID
+GET {{baseUrl}}/playlists/1
+Content-Type: application/json
+
+### Get All Tracks
+GET {{baseUrl}}/tracks
+Content-Type: application/json
+
+### Get Specific Track by ID 
+GET {{baseUrl}}/tracks/1
+Content-Type: application/json
